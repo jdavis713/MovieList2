@@ -8,16 +8,23 @@
 
 import UIKit
 
+protocol MovieListTableViewCellDelegate: class {
+    func seenButtonWasPressed(on cell: MovieListTableViewCell)
+}
+
 class MovieListTableViewCell: UITableViewCell {
 
     //MARK: -Actions
     
-    
-    
+    @IBAction func seenButtonPressed(_ sender: Any) {
+        print("Movie Seen")
+    }
     
     //MARK: -Functions
     private func updateViews() {
         guard let movie = movie else { return }
+        let seenButtonTitle = movie.isSeen ? "Not Seen" : "Seen"
+        seenButton.setTitle(seenButtonTitle, for: .normal)
         
         self.movieTitleLabel.text = movie.title
     }
@@ -26,6 +33,7 @@ class MovieListTableViewCell: UITableViewCell {
     //MARK: -Properties
     
     @IBOutlet var movieTitleLabel: UILabel!
+    @IBOutlet var seenButton: UIButton!
     
     var movie: Movie? {
         didSet {
