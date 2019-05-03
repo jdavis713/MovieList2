@@ -78,7 +78,7 @@ class MovieListTableViewController: UITableViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "AddMovieToList" {
+        if segue.identifier == "AddMovie" {
             guard let addNewMovieVC = segue.destination as? AddNewMovieViewController,
                 let indexPath = tableView.indexPathForSelectedRow else { return }
             addNewMovieVC.movie = movieListController.movies[indexPath.row]
