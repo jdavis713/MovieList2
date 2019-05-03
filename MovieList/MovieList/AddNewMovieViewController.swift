@@ -10,13 +10,21 @@ import UIKit
 
 class AddNewMovieViewController: UIViewController {
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        updateViews()
+    }
     //MARK: - Actions
     @IBAction func addMovieButtonPressed(_ sender: Any) {
         //print("Movie Added")
         guard let movie = movieTitleTextField.text, movie != ""  else { return }
+        
+        
+        navigationController?.popViewController(animated: true)
     }
     //MARK: Functions
-    func updateViews(){
+    func updateViews() {
         guard isViewLoaded else { return }
     }
     

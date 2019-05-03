@@ -24,9 +24,10 @@ class MovieListTableViewCell: UITableViewCell {
     
     
     //MARK: -Properties
-   @IBOutlet var movieTitleLabel: UILabel!
     
-        var movie: Movie? {
+    @IBOutlet var movieTitleLabel: UILabel!
+    
+    var movie: Movie? {
         didSet {
             updateViews()
         }
