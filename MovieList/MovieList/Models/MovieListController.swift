@@ -15,9 +15,7 @@ class MovieListController {
         movies.append(movie)
     }
     
-    func toggleHasSeen(for movie: Movie) {
-        movie.hasSeen = !movie.hasSeen
-    }
+    
     
     //MARK: -Properties
     
