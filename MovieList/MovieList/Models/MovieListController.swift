@@ -10,18 +10,15 @@ import Foundation
 
 class MovieListController {
     
-    init() {
-        createMovie(with: "Black Panther")
-        createMovie(with: "Never Back Down")
-        createMovie(with: "Harlem Nights")
-    }
-    
     func createMovie(with title: String) {
-        let movie = Movie(title: title, isSeen: false)
+        let movie = Movie(movie: title)
         
         movies.append(movie)
     }
     
+    func toggleHasSeen(for movie: Movie) {
+        movie.hasSeen = !movie.hasSeen
+    }
     
     //MARK: -Properties
     

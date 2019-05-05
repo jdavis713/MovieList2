@@ -30,32 +30,22 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xx9-2E-VBq" userLabel="Seen Button">
-                                                    <rect key="frame" x="359" y="7.5" width="35" height="28.5"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xx9-2E-VBq" userLabel="Seen Button">
+                                                    <rect key="frame" x="359" y="8" width="35" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Seen"/>
                                                     <connections>
                                                         <action selector="seenButtonPressed:" destination="DEf-Vr-eqy" eventType="touchUpInside" id="0el-9F-meT"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnh-It-4vs" userLabel="Movie Title Label">
-                                                    <rect key="frame" x="20" y="7.5" width="42" height="28.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnh-It-4vs" userLabel="Movie Title Label">
+                                                    <rect key="frame" x="20" y="8" width="42" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="xx9-2E-VBq" secondAttribute="bottom" constant="7.5" id="5A0-wM-pWs"/>
-                                                <constraint firstItem="Dnh-It-4vs" firstAttribute="bottom" secondItem="xx9-2E-VBq" secondAttribute="bottom" id="FWz-4f-P6b"/>
-                                                <constraint firstItem="xx9-2E-VBq" firstAttribute="top" secondItem="f8q-ka-9MK" secondAttribute="top" constant="8" id="QSl-Zk-Jez"/>
-                                                <constraint firstItem="Dnh-It-4vs" firstAttribute="centerY" secondItem="f8q-ka-9MK" secondAttribute="centerY" id="XKl-gP-A5j"/>
-                                                <constraint firstItem="xx9-2E-VBq" firstAttribute="leading" secondItem="Dnh-It-4vs" secondAttribute="trailing" constant="297" id="j43-Cc-SKv"/>
-                                                <constraint firstAttribute="trailing" secondItem="xx9-2E-VBq" secondAttribute="trailing" constant="20" id="mi9-TI-mwl"/>
-                                                <constraint firstItem="Dnh-It-4vs" firstAttribute="leading" secondItem="f8q-ka-9MK" secondAttribute="leadingMargin" id="uhl-4x-6vw"/>
-                                                <constraint firstItem="Dnh-It-4vs" firstAttribute="top" secondItem="xx9-2E-VBq" secondAttribute="top" id="v1E-B0-yJG"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Dnh-It-4vs" secondAttribute="bottom" constant="-3" id="vwj-YL-7dw"/>
-                                                <constraint firstItem="xx9-2E-VBq" firstAttribute="trailing" secondItem="f8q-ka-9MK" secondAttribute="trailingMargin" id="xay-oj-2pH"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="movieTitleLabel" destination="Dnh-It-4vs" id="h9s-jA-ljE"/>
