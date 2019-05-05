@@ -12,7 +12,6 @@ class MovieListController {
     
     func createMovie(with title: String) {
         let movie = Movie(movie: title)
-        
         movies.append(movie)
     }
     

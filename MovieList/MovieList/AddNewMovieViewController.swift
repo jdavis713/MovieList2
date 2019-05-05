@@ -19,7 +19,7 @@ class AddNewMovieViewController: UIViewController {
 
     //MARK: -Properties
     
-    let movieListController = MovieListController!
+    var movieListController = MovieListController()
     
     @IBOutlet var movieTitleTextField: UITextField!
     

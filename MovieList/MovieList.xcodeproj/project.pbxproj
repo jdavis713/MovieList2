@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8B549B4E227BF8500049DA7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B549B4D227BF8500049DA7B /* AppDelegate.swift */; };
-		8B549B50227BF8500049DA7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B549B4F227BF8500049DA7B /* ViewController.swift */; };
 		8B549B53227BF8500049DA7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B549B51227BF8500049DA7B /* Main.storyboard */; };
 		8B549B55227BF8550049DA7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B549B54227BF8550049DA7B /* Assets.xcassets */; };
 		8B549B58227BF8550049DA7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B549B56227BF8550049DA7B /* LaunchScreen.storyboard */; };
@@ -16,13 +15,12 @@
 		8B549B64227C04FF0049DA7B /* MovieListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B549B63227C04FF0049DA7B /* MovieListController.swift */; };
 		8B549B67227C07D20049DA7B /* AddNewMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B549B66227C07D20049DA7B /* AddNewMovieViewController.swift */; };
 		8B549B6B227C0DE60049DA7B /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B549B6A227C0DE60049DA7B /* MovieListTableViewCell.swift */; };
-		8B549B71227C9E7C0049DA7B /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B549B70227C9E7C0049DA7B /* MovieListTableViewController.swift */; };
+		8B549B9F227F6D5D0049DA7B /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B549B9E227F6D5D0049DA7B /* MovieListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B549B4A227BF8500049DA7B /* MovieList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B549B4D227BF8500049DA7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B549B4F227BF8500049DA7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B549B52227BF8500049DA7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B549B54227BF8550049DA7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B549B57227BF8550049DA7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,7 +29,7 @@
 		8B549B63227C04FF0049DA7B /* MovieListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListController.swift; sourceTree = "<group>"; };
 		8B549B66227C07D20049DA7B /* AddNewMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewMovieViewController.swift; sourceTree = "<group>"; };
 		8B549B6A227C0DE60049DA7B /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
-		8B549B70227C9E7C0049DA7B /* MovieListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
+		8B549B9E227F6D5D0049DA7B /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				8B549B4D227BF8500049DA7B /* AppDelegate.swift */,
-				8B549B4F227BF8500049DA7B /* ViewController.swift */,
 				8B549B51227BF8500049DA7B /* Main.storyboard */,
-				8B549B70227C9E7C0049DA7B /* MovieListTableViewController.swift */,
+				8B549B9E227F6D5D0049DA7B /* MovieListViewController.swift */,
 				8B549B6A227C0DE60049DA7B /* MovieListTableViewCell.swift */,
 				8B549B66227C07D20049DA7B /* AddNewMovieViewController.swift */,
 				8B549B65227C07930049DA7B /* Models */,
@@ -161,10 +158,9 @@
 				8B549B64227C04FF0049DA7B /* MovieListController.swift in Sources */,
 				8B549B62227C04BC0049DA7B /* MovieList.swift in Sources */,
 				8B549B6B227C0DE60049DA7B /* MovieListTableViewCell.swift in Sources */,
-				8B549B50227BF8500049DA7B /* ViewController.swift in Sources */,
+				8B549B9F227F6D5D0049DA7B /* MovieListViewController.swift in Sources */,
 				8B549B67227C07D20049DA7B /* AddNewMovieViewController.swift in Sources */,
 				8B549B4E227BF8500049DA7B /* AppDelegate.swift in Sources */,
-				8B549B71227C9E7C0049DA7B /* MovieListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
